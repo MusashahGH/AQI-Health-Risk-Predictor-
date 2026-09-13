@@ -1,0 +1,7 @@
+city,aqi_index,pm25,pm10,no2,so2,co,o3,risk,advice
+lahore,2,17.03,18.61,0.76,2.76,218.71,96.87,Low Risk,"Normal activities are fine, no special precautions needed."
+karachi,2,8.98,29.51,0.03,0.39,70.44,39.09,Low Risk,"Normal activities are fine, no special precautions needed."
+islamabad,4,58.56,89.72,0.92,3.56,295.21,138.88,Moderate Risk,Avoid prolonged outdoor activity. Keep a mask with you.
+faisalabad,3,19.3,23.28,0.67,2.16,235.23,103.74,Moderate Risk,Avoid prolonged outdoor activity. Keep a mask with you.
+multan,3,23.75,40.85,0.66,1.82,256.3,111.85,Moderate Risk,Avoid prolonged outdoor activity. Keep a mask with you.
+peshawar,4,50.8,92.26,0.69,3.08,255.65,131.31,Moderate Risk,Avoid prolonged outdoor activity. Keep a mask with you.
