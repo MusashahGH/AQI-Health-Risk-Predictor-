@@ -10,8 +10,11 @@ from database import init_db, save_check, get_history
 
 from risk_engine import calculate_risk
 
-app = Flask(__name__, template_folder='../Frontend/templates', static_folder='../Frontend/static')
-init_db()
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+TEMPLATE_DIR = os.path.join(BASE_DIR, "..", "Frontend", "templates")
+STATIC_DIR = os.path.join(BASE_DIR, "..", "Frontend", "static")
+
+app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)init_db()
 
 API_KEY = os.getenv("OPENWEATHER_KEY")
 GEMINI_KEY = os.getenv("GEMINI_API_KEY", "")
