@@ -14,7 +14,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_DIR = os.path.join(BASE_DIR, "..", "Frontend", "templates")
 STATIC_DIR = os.path.join(BASE_DIR, "..", "Frontend", "static")
 
-app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)init_db()
+app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
+init_db()
 
 API_KEY = os.getenv("OPENWEATHER_KEY")
 GEMINI_KEY = os.getenv("GEMINI_API_KEY", "")
