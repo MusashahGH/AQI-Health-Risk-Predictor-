@@ -11,8 +11,8 @@ from database import init_db, save_check, get_history
 from risk_engine import calculate_risk
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-TEMPLATE_DIR = os.path.join(BASE_DIR, "..", "Frontend", "templates")
-STATIC_DIR = os.path.join(BASE_DIR, "..", "Frontend", "static")
+TEMPLATE_DIR = os.path.join(BASE_DIR, "Frontend", "templates")
+STATIC_DIR = os.path.join(BASE_DIR, "Frontend", "static")
 
 app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
 init_db()
